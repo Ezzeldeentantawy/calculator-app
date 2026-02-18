@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Calculator | Simple & Fast Web Calculator by Ezzeldeen Tantawy</title>
+    <meta name="title" content="Online Calculator | Simple & Fast Web Calculator by Ezzeldeen Tantawy">
+    <meta name="description"
+        content="A clean, responsive, and easy-to-use online calculator for basic arithmetic, percentages, and scientific constants like e. Built by Ezzeldeen Tantawy.">
+    <meta name="keywords"
+        content="online calculator, web calculator, simple math tool, Ezzeldeen Tantawy, arithmetic calculator">
+    <meta name="author" content="Ezzeldeen Tantawy">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Online Calculator | Ezzeldeen Tantawy">
+    <meta property="og:description"
+        content="Perform quick calculations with this sleek, responsive web-based calculator.">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Online Calculator | Ezzeldeen Tantawy">
+    <meta property="twitter:description" content="Clean and fast web calculator for daily math tasks.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Ezzeldeen's Web Calculator",
+      "operatingSystem": "Any",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Ezzeldeen Tantawy"
+      },
+      "description": "A lightweight web-based calculator supporting addition, subtraction, multiplication, division, and percentages."
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+            <div class="buttons">
+                <div class="col first-column">
+                    <button class="operator special" id="clear">C</button>
+                    <button class="number" id="7">7</button>
+                    <button class="number" id="4">4</button>
+                    <button class="number" id="1">1</button>
+                    <button class="number special" id="e">e</button>
+                </div>
+                <div class="col second-column">
+                    <button class="operator special" id="backSpace">⌫</button>
+                    <button class="number" id="8">8</button>
+                    <button class="number" id="5">5</button>
+                    <button class="number" id="2">2</button>
+                    <button class="number zero" id="0">0</button>
+                </div>
+                <div class="col third-column">
+                    <button class="operator special" id="%">%</button>
+                    <button class="number" id="9">9</button>
+                    <button class="number" id="6">6</button>
+                    <button class="number" id="3">3</button>
+                    <button class="number" id="dot">.</button>
+                </div>
+                <div class="col fourth-column">
+                    <button class="operator" id="/">÷</button>
+                    <button class="operator" id="*">×</button>
+                    <button class="operator" id="-">−</button>
+                    <button class="operator" id="+">+</button>
+                    <button class="operator equals" id="equals">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
