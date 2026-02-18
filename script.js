@@ -13,12 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 display.innerText = "";
             } else if (operator.id === "equals") {
                 try {
-                    display.innerText = eval(display.innerText);
+                    display.innerText = eval(display.innerText.replace(/\^/g, "**"));
                 } catch (error) {
                     display.innerText = "Error";
                 }
             }else if(operator.id === "backSpace"){
                 display.innerText = display.innerText.slice(0, -1); 
+            }else if(operator.id === "**"){
+                display.innerText += "^";
             } else {
                 display.innerText += operator.id;
             }
